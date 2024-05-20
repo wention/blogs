@@ -123,3 +123,20 @@ family = "JetBrainsMono Nerd Font"
 ```
 scoop install msys2
 ```
+
+### WSL2
+安装
+```
+wsl --install
+wsl --update
+
+# 列出所有发行版: wsl -l -o
+wsl --install --distribution Ubuntu
+
+# 列出当前安装: wsl -l -v
+
+# 设置默认WSL版本
+wsl --set-version Ubuntu 2
+# 设置默认发行版
+wsl -s Ubuntu
+```

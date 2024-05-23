@@ -48,3 +48,4 @@ https://github.com/iwxyi/Qt-ShowyWidgets
 ## Qt 大佬
 
 刘典武 - https://github.com/feiyangqingyun
+PyQt5 代码笔记 - ttps://github.com/muziing/PyQt_practice

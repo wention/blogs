@@ -61,6 +61,12 @@ scoop install JetBrainsMono-NF
 ```
 
 ### winget
+配置源
+```
+winget source remove winget
+winget source add winget https://mirrors.ustc.edu.cn/winget-source
+```
+
 ```
 # 日常
 winget install Tencent.WeChat

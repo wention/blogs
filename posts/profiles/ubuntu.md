@@ -31,7 +31,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 ### tmux
 安装
 ```
-brew install tmux
+sudo apt install tmux
 ```
 
 ```
@@ -43,7 +43,7 @@ cp .tmux/.tmux.conf.local .
 ### neovim
 安装
 ```
-sudo pacman -S neovim
+sudo apt install neovim
 ```
 
 配置

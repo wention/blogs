@@ -4,7 +4,17 @@
 ## 安装常用包
 ```
 # Qt 开发环境
-sudo apt install 
+sudo apt update
+sudo aptitude upgrade
+sudo aptitude install --with-recommends build-essential cmake
+sudo aptitude install --with-recommends qtcreator
+sudo aptitude install --with-recommends qt5-default qt5-doc
+sudo aptitude install --with-recommends librabbitmq-dev libzmqpp-dev
+sudo aptitude install --with-recommends qtbase5-dev qtdeclarative5-dev qtquickcontrols2-5-dev qtmultimedia5-dev qtwebengine5-dev libqt5svg5-dev libqt5charts5-dev libqt5websockets5-dev
+
+sudo aptitude install --with-recommends python3-sqlalchemy
+sudo aptitude install --with-recommends pyqt5-dev-tools python3-pyqt5 python3-pyqtgraph python3-pyqt5.qtmultimedia python3-pyqt5.qtchart python3-pyqt5.qtopengl python3-pyqt5.qtquick python3-pyqt5.qtsvg python3-pyqt5.qtsql python3-pyqt5.qtserialport python3-pyqt5.qtwebsockets
+
 ```
 
 ## 常用配置

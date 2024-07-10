@@ -6,7 +6,7 @@
 # Qt 开发环境
 sudo apt update
 sudo aptitude upgrade
-sudo aptitude install --with-recommends build-essential cmake
+sudo aptitude install --with-recommends build-essential cmake git openssh-server
 sudo aptitude install --with-recommends qtcreator
 sudo aptitude install --with-recommends qt5-default qt5-doc
 sudo aptitude install --with-recommends librabbitmq-dev libzmqpp-dev

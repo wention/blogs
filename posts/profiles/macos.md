@@ -3,6 +3,15 @@ MacOS 环境配置
 
 ## 安装常用包
 ```
+brew install neovim tmux iterm2
+
+brew install gopass
+
+brew install neofetch
+
+brew install stats hackintool opencore-configurator
+
+brew install wechat microsoft-edge
 ```
 
 ## 常用配置

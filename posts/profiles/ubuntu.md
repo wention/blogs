@@ -3,7 +3,7 @@ Ubuntu 环境配置
 
 ## 更新源
 ```
-sudo sed -E -i 's/(archive|security).ubuntu.com/mirrors.ustc.edu.cn/' /etc/apt/sources.list
+sudo sed -E -i 's/(ports|archive|security).ubuntu.com/mirrors.ustc.edu.cn/' /etc/apt/sources.list
 
 sudo apt update -y
 ```

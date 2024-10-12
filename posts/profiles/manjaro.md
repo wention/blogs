@@ -3,8 +3,8 @@ Manjaro 环境配置
 
 ## 更新源
 ```
-sudo pacman -c China -m rank
-# sudo pacman -c China -id
+#sudo pacman-mirrors -c China -m rank
+sudo pacman-mirrors -c China -id
 ```
 
 ## 安装常用包

@@ -32,7 +32,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 ### tmux
 安装
 ```
-brew install tmux
+sudo pacman -S tmux
 ```
 
 ```

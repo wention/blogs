@@ -3,7 +3,7 @@ title: 'Kylin 发行版源'
 date: 2024-05-17
 ---
 
-## 银河麒麟桌面操作系统V10 (SP1)
+## 银河麒麟桌面操作系统V10 (SP1) 2303
 
 /etc/os-release
 ```
@@ -33,3 +33,31 @@ deb http://archive.kylinos.cn/kylin/KYLIN-ALL 10.1 main restricted universe mult
 deb http://archive2.kylinos.cn/deb/kylin/production/PART-V10-SP1/custom/partner/V10-SP1 default all
 ```
 
+## 银河麒麟桌面操作系统V10 (SP1) 2403
+/etc/os-release
+```
+NAME="Kylin"
+VERSION="银河麒麟桌面操作系统V10 (SP1)"
+VERSION_US="Kylin Linux Desktop V10 (SP1)"
+ID=kylin
+ID_LIKE=debian
+PRETTY_NAME="Kylin V10 SP1"
+VERSION_ID="v10"
+HOME_URL="http://www.kylinos.cn/"
+SUPPORT_URL="http://www.kylinos.cn/support/technology.html"
+BUG_REPORT_URL="http://www.kylinos.cn/"
+PRIVACY_POLICY_URL="http://www.kylinos.cn"
+VERSION_CODENAME=kylin
+UBUNTU_CODENAME=kylin
+PROJECT_CODENAME=V10SP1
+KYLIN_RELEASE_ID="2403"
+
+```
+
+/etc/apt/source.list
+```
+deb http://archive.kylinos.cn/kylin/KYLIN-ALL 10.1 main restricted universe multiverse
+deb http://archive.kylinos.cn/kylin/KYLIN-ALL 10.1-2403-updates main restricted universe multiverse
+deb http://archive.kylinos.cn/kylin/KYLIN-ALL 10.1-2403-hwe-updates main
+deb http://archive2.kylinos.cn/deb/kylin/production/PART-V10-SP1/custom/partner/V10-SP1 default all
+```

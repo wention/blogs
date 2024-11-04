@@ -5,7 +5,7 @@
 
 ### ubuntu
 ```
-sudo sed -E -i 's/(archive|security).ubuntu.com/mirrors.ustc.edu.cn/' /etc/apt/sources.list
+sudo sed -E -i 's/(archive|security|ports).ubuntu.com/mirrors.ustc.edu.cn/' /etc/apt/sources.list
 
 sudo apt update -y
 ```

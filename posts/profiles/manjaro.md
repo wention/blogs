@@ -51,5 +51,24 @@ sudo pacman -S neovim
 ```
 git clone https://github.com/NvChad/starter ~/.config/nvim && nvim
 ```
-
 > refer: https://nvchad.com/docs/quickstart/install
+
+### input method
+安装
+```
+sudo pacman -S rime-wubi
+```
+
+配置
+```
+mkdir ~/.config/ibus/rime
+
+cat >> ~/.config/ibus/rime/default.custom.yaml < EOF
+patch:
+  schema_list:
+    - schema: wubi-pinyin
+EOF
+
+# applying
+rm ~/.config/ibus/rime/default.yaml && ibus-daemon -drx
+```

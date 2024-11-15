@@ -16,6 +16,9 @@ apt install build-essential cmake git
 ```
 
 ## 银河麒麟V10 SP1 Arm64 交叉编译
+```
+sudo apt install debootstrap qemu-user-static
+```
 
 ```
 # 银河麒麟 Arm64 交叉编译

@@ -6,3 +6,8 @@ powershell 常用命令
 # 强制 Windows 使用 UTC
 Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsUniversal /t REG_QWORD /d 1
 ```
+
+Disable password expiration for user
+```
+cmd.exe /c wmic useraccount where "name='vagrant'" set PasswordExpires=FALSE
+```

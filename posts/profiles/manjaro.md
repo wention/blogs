@@ -53,7 +53,7 @@ git clone https://github.com/NvChad/starter ~/.config/nvim && nvim
 ```
 > refer: https://nvchad.com/docs/quickstart/install
 
-### input method
+### 安装中文输入法
 安装
 ```
 sudo pacman -S rime-wubi
@@ -63,7 +63,7 @@ sudo pacman -S rime-wubi
 ```
 mkdir ~/.config/ibus/rime
 
-cat >> ~/.config/ibus/rime/default.custom.yaml < EOF
+cat > ~/.config/ibus/rime/default.custom.yaml << EOF
 patch:
   schema_list:
     - schema: wubi-pinyin

@@ -79,3 +79,25 @@ sudo apt-get purge docker-ce docker-ce-cli containerd.io docker-buildx-plugin do
 sudo rm -rf /var/lib/docker
 sudo rm -rf /var/lib/containerd
 ```
+
+### 安装中文输入法
+安装
+```
+sudo apt install ibus-rime rime-data-wubi
+```
+
+配置
+```
+mkdir -p ~/.config/ibus/rime
+
+cat > ~/.config/ibus/rime/default.custom.yaml << EOF
+patch:
+  schema_list:
+    - schema: wubi_pinyin
+EOF
+
+# applying
+rm ~/.config/ibus/rime/default.yaml && ibus-daemon -drx
+```
+
+> 

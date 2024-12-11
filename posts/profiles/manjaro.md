@@ -66,7 +66,7 @@ mkdir ~/.config/ibus/rime
 cat > ~/.config/ibus/rime/default.custom.yaml << EOF
 patch:
   schema_list:
-    - schema: wubi-pinyin
+    - schema: wubi_pinyin
 EOF
 
 # applying

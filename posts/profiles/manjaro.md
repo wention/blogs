@@ -9,6 +9,7 @@ sudo pacman-mirrors -c China -id
 
 ## 安装常用包
 ```
+sudo pacman -S gopass
 ```
 
 ## 常用配置
@@ -71,4 +72,17 @@ EOF
 
 # applying
 rm ~/.config/ibus/rime/default.yaml && ibus-daemon -drx
+```
+
+### gopass
+安装
+```
+sudo pacman -S gopass
+```
+
+配置
+```
+gopass clone git@github.com:wention/pwstore.git
+
+gpg --import /path/to/gpg/key.asc
 ```

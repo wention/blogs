@@ -17,9 +17,9 @@ sudo apt update -y
 ## 安装常用包
 
 sudo apt install git tmux zsh
-sudo aptitude install qemu-system-arm qemu-user-static libguestfs-tools libvirt-daemon virt-manager
+sudo aptitude install vgabios qemu-system-arm qemu-user-static libguestfs-tools libvirt-daemon virt-manager
 
-sudo aptitude install neofech ncdu ranger ripgrep fzf
+sudo aptitude install neofech ncdu ranger ripgrep fzf wl-clipboard xclip
 
 ## 常用配置
 

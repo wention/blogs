@@ -31,6 +31,18 @@ sudo pacman -S base-devel
 sudo pacman -S yay
 yay -S visual-studio-code-bin
 yay -S wechat-bin
+
+
+# Desgin
+sudo pacman -S gimp inkscape blender
+
+
+# Office
+
+
+# Games
+sudo pacman -S retroarch
+sudo pacman -S --asdeps libretro-shaders retroarch-assets-ozone retroarch-assets-xmb
 ```
 
 ## 常用配置

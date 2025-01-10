@@ -133,3 +133,13 @@ sudo nvidia-ctk runtime configure --runtime=docker
 sudo systemctl enable --now docker
 sudo usermod -aG docker $USER
 ```
+
+
+### OpenVPN
+
+```
+sudo pacman -S networkmanager-openvpn
+sudo pacman -S --asdeps libnma
+
+nmcli connection import type openvpn file /path/to/config.ovpn
+```

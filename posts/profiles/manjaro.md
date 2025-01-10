@@ -9,7 +9,28 @@ sudo pacman-mirrors -c China -id
 
 ## 安装常用包
 ```
+sudo pacman -S zsh tmux neovim
+sudo pacman -S --asdeps python-pynvim xclip wl-clipboard
+sudo pacman -S noto-fonts-cjk ttf-jetbrains-mono-nerd
+sudo pacman -S gnome-shell-extension-caffeine
+sudo pacman -S neofetch
+
 sudo pacman -S gopass
+
+sudo pacman -S docker
+sudo pacman -S --asdeps docker-buildx docker-compose
+
+sudo pacman -S timeshift
+sudo pacman -S virt-manager
+sudo pacman -S qemu-emulators-full
+
+sudo pacman -S qemu-user-static
+sudo pacman -S qemu-user-static-binfmt
+
+sudo pacman -S base-devel 
+sudo pacman -S yay
+yay -S visual-studio-code-bin
+yay -S wechat-bin
 ```
 
 ## 常用配置
@@ -57,7 +78,7 @@ git clone https://github.com/NvChad/starter ~/.config/nvim && nvim
 ### 安装中文输入法
 安装
 ```
-sudo pacman -S rime-wubi
+sudo pacman -S ibus-rime rime-wubi
 ```
 
 配置
@@ -85,4 +106,18 @@ sudo pacman -S gopass
 gopass clone git@github.com:wention/pwstore.git
 
 gpg --import /path/to/gpg/key.asc
+```
+
+
+### Docker
+
+```
+sudo pacman -S docker
+sudo pacman -S --asdeps docker-buildx docker-compose
+
+sudo pacman -S nvidia-container-toolkit
+sudo nvidia-ctk runtime configure --runtime=docker
+
+sudo systemctl enable --now docker
+sudo usermod -aG docker $USER
 ```

@@ -11,3 +11,11 @@ Disable password expiration for user
 ```
 cmd.exe /c wmic useraccount where "name='vagrant'" set PasswordExpires=FALSE
 ```
+
+Windows 激活命令
+```
+slmgr -ipk 密钥
+slmgr -skms 服务器地址
+slmgr -ato 
+slmgr -dlv
+```

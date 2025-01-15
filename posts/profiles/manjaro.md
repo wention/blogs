@@ -38,6 +38,7 @@ sudo pacman -S gimp inkscape blender
 
 
 # Office
+yay -S wps-office-cn
 
 
 # Games

@@ -13,7 +13,7 @@ sudo pacman -S zsh tmux neovim
 sudo pacman -S --asdeps python-pynvim xclip wl-clipboard
 sudo pacman -S noto-fonts-cjk ttf-jetbrains-mono-nerd
 sudo pacman -S gnome-shell-extension-caffeine
-sudo pacman -S neofetch
+sudo pacman -S neofetch gdu ranger zfz ripgrep cloc
 
 sudo pacman -S gopass
 

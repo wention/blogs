@@ -39,6 +39,9 @@ scoop install dependencies
 # 开发 - 实用工具
 scoop install cloc
 
+# 字典
+scoop install goldendict
+
 # 网络
 scoop install openvpn
 

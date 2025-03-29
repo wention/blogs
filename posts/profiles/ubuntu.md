@@ -62,6 +62,8 @@ for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker c
 
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo DOWNLOAD_URL=https://mirrors.ustc.edu.cn/docker-ce sh get-docker.sh
+
+sudo usermod -aG docker $USER
 ```
 
 

@@ -33,6 +33,6 @@ pip config set global.index-url https://mirrors.ustc.edu.cn/pypi/web/simple
 
 ### npm
 ```
-npm config set registry https://registry.npm.taobao.org/
-yarn config set registry https://registry.npm.taobao.org/
+npm config set registry https://registry.npmmirror.com
+yarn config set registry https://registry.npmmirror.com
 ```

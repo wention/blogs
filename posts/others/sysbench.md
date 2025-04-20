@@ -22,5 +22,5 @@ fio -name=1mseqw  -runtime=120  -filename=/tmp/seq.fio -ioengine=libaio -direct=
 fio -name=1mseqr  -runtime=120  -filename=/tmp/seq.fio -ioengine=libaio -direct=1  -bs=1024k  -size=5g  -iodepth=128  -numjobs=1  -rw=read -group_reporting -time_based
   
 # 1Mb  顺序读写
-fio -name=1mseqrw  -runtime=120  -filename=/tmp/seq.txt -ioengine=libaio -direct=1  -bs=1024k  -size=5g  -iodepth=128  -numjobs=1  -rw=rw -rwmixwrite=30  -group_reporting -time_based
+fio -name=1mseqrw  -runtime=120  -filename=/tmp/seq.fio -ioengine=libaio -direct=1  -bs=1024k  -size=5g  -iodepth=128  -numjobs=1  -rw=rw -rwmixwrite=30  -group_reporting -time_based
 ```

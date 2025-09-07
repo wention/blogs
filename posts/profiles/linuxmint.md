@@ -10,6 +10,14 @@ sudo apt update -y
 ```
 
 ## 安装常用包
+```
+openssh-server
+git
+tmux zsh
+
+neofetch
+gdu ranger ripgrep cloc
+```
 
 ## 常用配置
 
@@ -36,15 +44,19 @@ sudo apt install tmux
 ```
 
 ```
-git clone https://github.com/gpakosz/.tmux.git
-ln -s -f .tmux/.tmux.conf
-cp .tmux/.tmux.conf.local .
+git clone https://github.com/gpakosz/.tmux.git ~/.tmux
+ln -s -f ~/.tmux/.tmux.conf ~/.tmux.conf
+cp ~/.tmux/.tmux.conf.local ~/.tmux.conf.local
 ```
 
 ### neovim
 安装
 ```
+sudo add-apt-repository ppa:neovim-ppa/stable
+sudo apt update
 sudo apt install neovim
+
+
 ```
 
 配置
@@ -69,6 +81,12 @@ echo \
   $(. /etc/os-release && echo "$UBUNTU_CODENAME") stable" | \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 sudo apt-get update
+
+sudo apt-get purge docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
+# use Docker without root privileges
+sudo usermod -aG docker $USER
 ```
 
 

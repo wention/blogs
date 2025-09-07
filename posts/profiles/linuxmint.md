@@ -12,11 +12,49 @@ sudo apt update -y
 ## 安装常用包
 ```
 openssh-server
-git
+
 tmux zsh
 
 neofetch
-gdu ranger ripgrep cloc
+gdu ranger
+
+
+# 开发
+git cmake build-essential
+cloc
+
+# 交叉统译
+qemu-user-static qemu-user-binfmt
+
+# 虚机
+virt-manager virt-viewer qemu-system-arm
+
+# 图像处理
+gimp inkscape blender
+
+# 视频
+ffmpeg mpv
+```
+
+#### Qt 开发
+```
+# QWidgets
+qtbase5-dev qtchooser qttools5-dev-tools qttools5-dev
+qtbase5-examples qttools5-doc qt5-doc qt5-doc-html
+
+# QML
+qtdeclarative5-dev qtdeclarative5-dev-tools qtquickcontrols2-5-dev
+qtdeclarative5-doc qtdeclarative5-examples qtquickcontrols2-5-doc qtquickcontrols2-5-examples
+
+# WebEngine
+qtwebengine5-dev qtwebengine5-dev-tools
+qtwebengine5-doc qtwebengine5-examples
+
+# DB
+libqt5sql5-odbc
+odbcinst unixodbc-dev odbc-postgresql
+
+qtcreator
 ```
 
 ## 常用配置
@@ -54,9 +92,7 @@ cp ~/.tmux/.tmux.conf.local ~/.tmux.conf.local
 ```
 sudo add-apt-repository ppa:neovim-ppa/stable
 sudo apt update
-sudo apt install neovim
-
-
+sudo apt install neovim ripgrep xclip
 ```
 
 配置

@@ -17,6 +17,13 @@ tmux zsh
 
 neofetch
 gdu ranger
+sysstat
+aria2
+
+pandoc texlive-full
+
+# 调试
+wireshark tcpreplay
 
 
 # 开发
@@ -24,7 +31,7 @@ git cmake build-essential
 cloc
 
 # 交叉统译
-qemu-user-static qemu-user-binfmt
+qemu-user-static binfmt-support
 
 # 虚机
 virt-manager virt-viewer qemu-system-arm
@@ -135,13 +142,15 @@ sudo rm -rf /var/lib/containerd
 ```
 
 ### 安装中文输入法
+
+#### 基于 ibus
 安装
-```
+```shell
 sudo apt install ibus-rime rime-data-wubi
 ```
 
 配置
-```
+```shell
 mkdir -p ~/.config/ibus/rime
 
 cat > ~/.config/ibus/rime/default.custom.yaml << EOF
@@ -154,4 +163,20 @@ EOF
 rm ~/.config/ibus/rime/default.yaml && ibus-daemon -drx
 ```
 
-> 
+### 基于 fcitx5 
+安装
+```shell
+sudo apt install fcitx5-rime rime-data-wubi
+```
+
+配置
+```shell
+cat > ~/.local/share/fcitx5/rime/default.custom.yaml << EOF
+patch:
+  schema_list:
+    - schema: wubi_pinyin
+EOF
+
+# applying
+fcitx5 -r
+```

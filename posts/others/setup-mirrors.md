@@ -36,3 +36,22 @@ pip config set global.index-url https://mirrors.ustc.edu.cn/pypi/web/simple
 npm config set registry https://registry.npmmirror.com
 yarn config set registry https://registry.npmmirror.com
 ```
+
+### docker
+代理
+```
+{
+  "proxies": {
+    "http-proxy": "http://127.0.0.1:7890",
+    "https-proxy": "http://127.0.0.1:7890",
+    "no-proxy": "*.test.example.com,.example.org,127.0.0.0/8"
+  }
+}
+```
+
+镜像
+```
+{
+  "registry-mirrors": ["https://docker.m.daocloud.io"]
+}
+```

@@ -75,3 +75,18 @@ sudo apt-get purge docker-ce docker-ce-cli containerd.io docker-buildx-plugin do
 sudo rm -rf /var/lib/docker
 sudo rm -rf /var/lib/containerd
 ```
+
+
+## 启用远程桌面
+```
+# 启用远程桌面
+dconf write /org/gnome/desktop/remote-access/prompt-enabled "false"
+dconf write /org/ukui/settings-daemon/plugins/sharing/service-name "['vino-server']"
+
+# 立即生效
+systemctl --user start vino-server
+
+# 禁用 - 可能要重启后生效
+# dconf write /org/ukui/settings-daemon/plugins/sharing/service-name "@as []"
+
+```

@@ -44,6 +44,8 @@ yay -S wps-office-cn
 # Games
 sudo pacman -S retroarch
 sudo pacman -S --asdeps libretro-shaders retroarch-assets-ozone retroarch-assets-xmb
+
+sudo pacman -S umu-launcher gamemode mangohud
 ```
 
 ## 常用配置
